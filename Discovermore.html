@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Topic 1</title>
+    <link rel="stylesheet" href="assets/css/templatemo-scholar.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            scroll-behavior: smooth; /* Smooth scrolling */
+        }
+
+        header, footer {
+            background-color: #4393e3;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 1px solid #6d76ec;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+        }
+
+        h2, h1 {
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        h2 i {
+            color: #28a745;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .main-content {
+            text-align: center;
+        }
+
+        .discover-details p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        .discover-details img {
+            max-width: 90%;
+            margin: 0 auto;
+        }
+
+        .parallax {
+            background-image: url('assets/images/background.jpg'); /* Path to your 3D background image */
+            min-height: 400px; 
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        .parallax .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .parallax::before {
+            content: '';
+            display: block;
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Optional dark overlay */
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        /* Scroll Animation */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class="parallax">
+        <div class="container main-content">
+            <h2><i>GET FREE BOOKS MATERIAL WORTH RS 3500</i></h2>
+            <img src="assets/images/BOOKS.jpg" alt="Books" class="fade-in">
+            
+            <h2>MONTHLY Magazine Worth Rs 300</h2>
+            <img src="assets/images/MAGZINE.jpg" alt="Magazine" class="fade-in">
+            
+            <h2>Highly Decorated Computer Lab Equipped with Latest P4 Computers</h2>
+            <img src="assets/images/D3.jpg" alt="Computer Lab" class="fade-in">
+            <img src="assets/images/d1.jpg" alt="Computer Lab 2" class="fade-in">
+
+            <h1>Highly Qualified, Dedicated, and Experienced Faculty Members</h1>
+            <img src="assets/images/d2.jpg" alt="Faculty Members" class="fade-in">
+
+            <h2>Theory and Lab Classes Conducted Every Day</h2>
+            <img src="assets/images/D3.jpg" alt="Lab Classes" class="fade-in">
+            <img src="assets/images/WhatsApp Image 2024-07-01 at 11.58.24_a27882c9.jpg" alt="Lab Classes 2" class="fade-in">
+            <img src="assets/images/d5.jpg" alt="Lab Classes 3" class="fade-in">
+            <img src="assets/images/d6.jpg" alt="Lab Classes 4" class="fade-in">
+            <img src="assets/images/WhatsApp Image 2024-07-01 at 11.58.24_f1169947.jpg" alt="Lab Classes 5" class="fade-in">
+            <img src="assets/images/d7.jpg" alt="Lab Classes 6" class="fade-in">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 HITC. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Scroll Animation JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            const faders = document.querySelectorAll('.fade-in');
+            const options = {
+                threshold: 0.5,
+                rootMargin: '0px 0px -100px 0px'
+            };
+
+            const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) {
+                        return;
+                    } else {
+                        entry.target.classList.add('visible');
+                        appearOnScroll.unobserve(entry.target);
+                    }
+                });
+            }, options);
+
+            faders.forEach(fader => {
+                appearOnScroll.observe(fader);
+            });
+        });
+    </script>
+</body>
+</html>

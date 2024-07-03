@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article 1</title>
+    <link rel="stylesheet" href="assets/css/templatemo-scholar.css">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            perspective: 1000px; /* Add perspective for 3D effect */
+        }
+
+        header, footer {
+            background-color: #007bff;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transform: rotateX(10deg) rotateY(-10deg); /* Add 3D rotation */
+        }
+
+        h2, h1 {
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        h2 i {
+            color: #28a745;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        p, li {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+            text-align: justify;
+        }
+
+        b {
+            color: #007bff;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            background: #f4f4f4;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        /* 3D Background Animation */
+        @keyframes moveBackground {
+            0% { background-position: 0% 0%; }
+            50% { background-position: 100% 100%; }
+            100% { background-position: 0% 0%; }
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, #ff6b6b, #f9ca24, #6ab04c, #686de0, #badc58, #e056fd, #ff7979);
+            background-size: 300% 300%;
+            z-index: -1;
+            animation: moveBackground 20s linear infinite;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Discover Topic 1</h1>
+    </header>
+
+    <main>
+        <section class="article-details">
+            <div class="container">
+                <h2>Introduction to Course: CABA-MDTP</h2>
+                
+                <p>The Computer Applications, Business Accounting and Multilingual Desktop Publishing
+                    (CABA-MDTP) is a one-year Diploma course that has been designed for transforming
+                    the Urdu speakers into productive human resources in the field of Information
+                    Technology. Further, the course would empower the participants to become part of the
+                    enriched technological workforce that is in demand in the Information Technology
+                    Industry these days.
+                </p>
+                
+                <p>The Urdu Council has made every possible effort to devise the course as per the need of
+                    the “Tech Savvy Industry” that is in constant look out for skilled manpower which could
+                    be directly utilized into operations without any formal training. This venture is a
+                    sincere effort by the Council to bridge the gap between “The Academia” and “The
+                    Industry” on the whole.</p>
+
+                <p>The contents of this course have been enriched with a plethora of technologies
+                    comprising of the following broad categories:</p>
+                    
+                <ul>
+                    <li><b>A:</b> Information Technology Basics</li>
+                    <li><b>B:</b> Python Language with emphasis on Machine Learning and Artificial Intelligence</li>
+                    <li><b>C:</b> Financial Accounting using Tally</li>
+                    <li><b>D:</b> Emerging Information Technology Trends</li>
+                    <li><b>E:</b> Web-Designing with HTML, DHTML and JavaScript</li>
+                    <li><b>F:</b> Web Development using PHP</li>
+                    <li><b>G:</b> Database concepts with MS-Access</li>
+                    <li><b>H:</b> Coverage of Urdu and DTP Software: Inpage</li>
+                    <li><b>I:</b> Multimedia Applications with varied tools like Corel Draw, Photoshop, Dreamweaver and Illustrator</li>
+                    <li><b>J:</b> Exposure to Personality Development</li>
+                </ul>
+
+                <img src="assets/images/WhatsApp Image 2024-07-01 at 11.58.24_f1169947.jpg" alt="Course Image">
+
+                <h2>The contents have been designed keeping in view the career perspective of an
+                    individual who completes the course and wants to excel in the field of Information
+                    Technology. The modules covered are:</h2>
+                    
+                <ul>
+                    <li><b>1. Module I:</b> Fundamentals of Information Technology</li>
+                    <li><b>2. Module II:</b> Internet Technology and Web Designing</li>
+                    <li><b>3. Module III:</b> Financial Accounting Using Tally & Personality Development</li>
+                    <li><b>4. Module IV:</b> Emerging trends in IT</li>
+                    <li><b>5. Module V:</b> Multilingual DTP</li>
+                    <li><b>6. Module VI:</b> Artificial Intelligence and Machine Learning with Python</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 HITC. All rights reserved.</p>
+    </footer>
+</body>
+</html>
